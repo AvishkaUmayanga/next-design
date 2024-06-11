@@ -1,0 +1,20 @@
+.headerMain{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.125rem;
+}
+
+.logo{
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.navLinks{
+    display: flex;
+    gap: 3em;
+}
+
+.navLinks a{
+    text-decoration: none;
+    color: white;
+}
