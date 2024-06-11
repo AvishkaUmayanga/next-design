@@ -1,4 +1,4 @@
-.Anacontainer{
+.anaContainer{
     display: flex;
     flex-direction:  column;
     gap: 2em;
@@ -8,6 +8,11 @@
     display: flex;
     align-items: center;
     gap: 3em;
+}
+
+.analyticsImage{
+    width: 25em;
+    height: 25em;
 }
 
 .textImgContainer h4{
@@ -47,4 +52,23 @@
 
 .textImgContainer1{
     align-self: flex-end;
+}
+
+@media screen and (max-width: 767px){
+    .anaContainer{
+        gap: 5em;
+    }
+
+    .textImgContainer1{
+        flex-direction: column;
+    }
+
+    .textImgContainer2{
+        flex-direction: column-reverse;
+    }
+
+    .analyticsImage{
+        width: 16em;
+        height: 16em;
+    }
 }

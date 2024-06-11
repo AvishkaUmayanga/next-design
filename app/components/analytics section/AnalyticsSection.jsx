@@ -7,21 +7,21 @@ import styles from '@/app/components/analytics section/analytics.module.css'
 
 const AnalyticsSection = () => {
   return (
-    <div className={styles.Anacontainer}>
+    <div className={styles.anaContainer}>
         <div className={`${styles.textImgContainer} ${styles.textImgContainer1}`}>
             <div>
-              <Image src={analyticsImg1} alt='analytics'/>
+              <Image src={analyticsImg1} alt='analytics' className={styles.analyticsImage}/>
             </div>
             <div>
                 <AnalyticsText />
             </div>
         </div>
-        <div className={styles.textImgContainer}>
+        <div className={`${styles.textImgContainer} ${styles.textImgContainer2}`}>
             <div>
                 <AnalyticsText />
             </div>
             <div>
-                <Image src={analyticsImg2} alt='analytics'/>    
+                <Image src={analyticsImg2} alt='analytics' className={styles.analyticsImage}/>    
             </div>
         </div>
     </div>
