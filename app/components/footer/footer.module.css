@@ -4,6 +4,7 @@
     gap: 4em;
     justify-content: space-around;
     row-gap: 3em;
+    padding-bottom: 1.5em;
 }
 
 .footerContainer h4{
