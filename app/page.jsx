@@ -3,6 +3,7 @@ import Header from './components/header/Header';
 import HeroSection from './components/hero section/HeroSection';
 import FeaturedSection from './components/featured section/FeaturedSection';
 import AnalyticsSection from './components/analytics section/AnalyticsSection';
+import Testimonials from './components/testimonials section/Testimonials';
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection />
       <FeaturedSection />
       <AnalyticsSection />
+      <Testimonials />
     </main>
   );
 }
