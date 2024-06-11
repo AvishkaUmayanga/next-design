@@ -50,7 +50,22 @@
     font-size: 3em;
 }
 
-.heroImg{
-    width: 30em;
-    height: 34em;
+.heroImage{
+    width: 25em;
+    height: 26em;
+}
+
+@media screen and (max-width: 1023px){
+    .heroMain{
+        flex-direction: column-reverse;
+    }
+
+    .heroImage{
+        width: 20em;
+        height: 21em;
+    }
+
+    .heroButtons{
+        width: 9em;
+    }
 }

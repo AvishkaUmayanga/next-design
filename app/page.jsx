@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Header />
-      {/* <HeroSection /> */}
+      <HeroSection />
       <FeaturedSection />
       <AnalyticsSection />
       <Testimonials />
