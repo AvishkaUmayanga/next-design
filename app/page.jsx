@@ -5,6 +5,7 @@ import FeaturedSection from './components/featured section/FeaturedSection';
 import AnalyticsSection from './components/analytics section/AnalyticsSection';
 import Testimonials from './components/testimonials section/Testimonials';
 import GetStarted from './components/get started/GetStarted';
+import Footer from './components/footer/Footer';
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -14,6 +15,7 @@ export default function Home() {
       <AnalyticsSection />
       <Testimonials />
       <GetStarted />
+      <Footer />
     </main>
   );
 }

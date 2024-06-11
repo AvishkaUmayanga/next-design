@@ -1,0 +1,23 @@
+.listContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.listContainer h5{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.listContainer ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 0.7em;
+}
+
+.listContainer a{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,48 @@
+.footerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 3em;
+}
+
+.footerContainer h4{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.emailContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.emailAndButton{
+    background-color: #14144F;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5em;
+}
+
+.emailAndButton input{
+    background-color: #14144F;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5em;
+    color: white;
+}
+
+.emailAndButton input:focus{
+    outline: none;
+}
+
+.emailAndButton button{
+    border-radius: 5em;
+    font-weight: 600;
+    background-color: #8C8CDA;
+    color: white;
+    padding: 0.5em 1.5em;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
