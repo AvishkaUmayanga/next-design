@@ -1,3 +1,56 @@
 .heroMain{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.125rem;
+}
+
+.heroTextContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 26em;
+}
+
+.heroButtonsArea{
+    display: flex;
+    justify-content: space-between;
+}
+
+.heroButtons{
+    width: 11em;
+    padding: 1em;
+    border-radius: 5em;
+    border: none;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: inherit;
+    border: 1px solid #86CFD0;
+    color: white;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.buyButton{
+    background-color: #8C8CDA;
+}
+
+.buyButton:hover{
+    background-color: #000337;
+    transition-duration: 500ms;
+}
+
+.sellButton:hover{
+    background-color: #8C8CDA;
+    transition-duration: 500ms;
+}
+
+.heroTextContent h1{
+    font-size: 3em;
+}
+
+.heroImg{
+    width: 30em;
+    height: 34em;
 }
