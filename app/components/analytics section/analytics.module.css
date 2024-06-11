@@ -11,8 +11,8 @@
 }
 
 .analyticsImage{
-    width: 25em;
-    height: 25em;
+    width: 23em;
+    height: 23em;
 }
 
 .textImgContainer h4{
@@ -55,9 +55,6 @@
 }
 
 @media screen and (max-width: 767px){
-    .anaContainer{
-        gap: 5em;
-    }
 
     .textImgContainer1{
         flex-direction: column;
@@ -70,5 +67,15 @@
     .analyticsImage{
         width: 16em;
         height: 16em;
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .analyticsImage{
+        width: 20em;
+        height: 20em;
+    }
+    .anaContainer{
+        gap: 5em;
     }
 }
