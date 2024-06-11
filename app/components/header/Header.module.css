@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 1.125rem;
+    padding-top: 1em;
 }
 
 .logo{
@@ -17,4 +18,25 @@
 .navLinks a{
     text-decoration: none;
     color: white;
+}
+
+.iconsContainer{
+    display: none;
+}
+
+@media screen and (max-width: 767px){
+    .navLinks{
+      display: none;
+    }
+    .iconsContainer{
+        display: flex;
+    }
+}
+
+.navLinks.dropDown{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 2em;
 }
