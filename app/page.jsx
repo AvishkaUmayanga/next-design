@@ -4,6 +4,7 @@ import HeroSection from './components/hero section/HeroSection';
 import FeaturedSection from './components/featured section/FeaturedSection';
 import AnalyticsSection from './components/analytics section/AnalyticsSection';
 import Testimonials from './components/testimonials section/Testimonials';
+import GetStarted from './components/get started/GetStarted';
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -12,6 +13,7 @@ export default function Home() {
       <FeaturedSection />
       <AnalyticsSection />
       <Testimonials />
+      <GetStarted />
     </main>
   );
 }

@@ -1,0 +1,33 @@
+.startContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to right, #4141C2, #86CFD0);
+    border-radius: 1.25em;
+    text-align: center;
+    gap: 1.5em;
+    padding: 3em;
+}
+
+.startContainer h4{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.startContainer h2{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.startButton{
+    background-color: black;
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.7em 2em;
+    border-radius: 5em;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
