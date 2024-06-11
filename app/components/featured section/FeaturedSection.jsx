@@ -11,10 +11,10 @@ const FeaturedSection = () => {
     <div className={styles.featuredContainer}>
         <h4>Featured on</h4>
         <div className={styles.itemsContainer}>
-            <Image src={featured1}/>
-            <Image src={featured2}/>
-            <Image src={featured3}/>
-            <Image src={featured4}/>
+            <Image src={featured1} alt='TechCrunch'/>
+            <Image src={featured2} alt='FastCompany'/>
+            <Image src={featured3} alt='MIT'/>
+            <Image src={featured4} alt='forbes'/>
         </div>
     </div>
   )
