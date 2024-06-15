@@ -48,6 +48,7 @@
     color: white;
     border-radius: 5em;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .textImgContainer1{

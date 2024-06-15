@@ -1,22 +1,26 @@
-import React from 'react'
 import Image from 'next/image'
 import styles from '@/app/components/hero section/hero.module.css'
 import heroImg from '@/public/hero.png'
+import { fetchHeroData } from '@/app/queries/getHeroSectionData'
 
-const HeroSection = () => {
+const HeroSection = async() => {
+
+  const data = await fetchHeroData();
+  const heroData = data[0];
+
   return (
     <div className={styles.heroMain}>
-        <div className={styles.heroTextContent}>
-            <h1>Discover And Collect Rare NFTs</h1>
-            <p>The most secure marketplace for buying and selling unique crypto assets.</p>
-            <div className={styles.heroButtonsArea}>
-                <button type='button' className={`${styles.heroButtons} ${styles.buyButton}`}>buy nfts</button>
-                <button type='button' className={`${styles.heroButtons} ${styles.sellButton}`}>sell nfts</button>
-            </div>
+      <div className={styles.heroTextContent}>
+        <h1>{heroData.title}</h1>
+        <p>{heroData.description}</p>
+        <div className={styles.heroButtonsArea}>
+          <button type='button' className={`${styles.heroButtons} ${styles.buyButton}`}>{heroData.buyButton}</button>
+          <button type='button' className={`${styles.heroButtons} ${styles.sellButton}`}>{heroData.sellButton}</button>
         </div>
-        <div>
-            <Image src={heroImg} alt='hero' className={styles.heroImage}/>
-        </div>
+      </div>
+      <div>
+        <Image src={heroImg} alt='hero' className={styles.heroImage}/>
+      </div>
     </div>
   )
 }

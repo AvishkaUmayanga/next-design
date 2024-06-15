@@ -1,12 +1,16 @@
 import React from 'react'
 import styles from '@/app/components/get started/start.module.css'
+import { fetchGetStartedData } from '@/app/queries/getStartedData'
 
-const GetStarted = () => {
+const GetStarted = async() => {
+  const data = await fetchGetStartedData();
+  const startedData = data[0];
+
   return (
     <div className={styles.startContainer}>
-        <h4>are you ready?</h4>
-        <h2>be a part of the <br/>next big thing</h2>
-        <button className={styles.startButton}>get started</button>
+        <h4>{startedData.heading}</h4>
+        <h2>{startedData.title}</h2>
+        <button className={styles.startButton}>{startedData.buttonText}</button>
     </div>
   )
 }

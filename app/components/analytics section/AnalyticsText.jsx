@@ -1,14 +1,17 @@
 import React from 'react'
 import styles from '@/app/components/analytics section/analytics.module.css'
+import { fetchAnalyticsData } from '@/app/queries/getAnalyticsData'
 
-const AnalyticsText = () => {
+const AnalyticsText = async() => {
+  const data = await fetchAnalyticsData()
+  const analyticsData = data[0]
   return (
     <div className={styles.textContainer}>
-        <h4>Analytics</h4>
-        <h2>built-in analytics to track your nfts</h2>
-        <p>Use our built-in analytics dashboard to pull valuable insights and monitor the value of your Krypto portfolio over time.</p>
+        <h4>{analyticsData.heading}</h4>
+        <h2>{analyticsData.title}</h2>
+        <p>{analyticsData.description}</p>
         <div>
-            <button type='button' className={styles.analyticsButton}>view our pricing</button>
+            <button type='button' className={styles.analyticsButton}>{analyticsData.buttonText}</button>
         </div>
     </div>
   )

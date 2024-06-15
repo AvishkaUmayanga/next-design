@@ -5,9 +5,10 @@ import styles from '@/app/components/header/Header.module.css'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  
   const toggleMenu = () => {
-    setIsOpen(!isOpen)
+    setIsOpen(!isOpen);
   }
 
   return (
